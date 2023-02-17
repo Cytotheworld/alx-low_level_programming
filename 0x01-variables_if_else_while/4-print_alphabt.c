@@ -1,20 +1,18 @@
 #include <stdio.h>
 /**
  * main - prints in lower case
- *
  * Return: 0 (success)
  */
 
 int main(void)
 {
-	char 'c';
+	char 'a';
 
 	c = 'a';
 	while
 		(c <= 'z') {
 			if ((c != 'q' && c != 'e') && c <= 'z')
 				putchar(c);
-			c++;
 		}
 	putchar('\n');
 	return (0);
