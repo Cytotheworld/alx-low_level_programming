@@ -1,19 +1,13 @@
-#include "main.h"
-/**
- * _strcpy - copy stringat the end of another string including \0.
- * @dest: pointer to string to be copied to.
- * @src: pointer to string to be copied.
- *
- * Return: pointer to dest.
- */
-char *_strcpy(char *dest, char *src)
-{
-	int j;
+#include <unistd.h>
 
-	for (j = 0; src[j] != '\0'; j++)
-	{
-		dest[j] = src[j];
-	}
-	dest[j] = '\0';
-	return (dest);
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }
